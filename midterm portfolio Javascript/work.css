@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: url(img/99background.PNG);
+    /* background-position: center center; */
+    background-size: cover;
+   
+
+}
+.container{
+    width: 520px;
+    height: 600px;
+
+    box-shadow: 0 0 50px rgba(0,0,0,0.25);
+    position: absolute;
+    left:11%;
+    top:13%;
+
+    overflow: hidden;
+
+    animation-name: up;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-in;
+}
+
+@keyframes up{
+    10%{
+        transform: translateY(500px);
+        opacity: 0.6;
+    }
+    30%{
+        transform: translateY(480px);
+        opacity: 0.7;
+    }
+    50%{
+        transform: translateY(460px);
+        opacity: 0.8;
+    } 
+    70%{
+        transform: translateY(440px);
+        opacity: 0.9;
+    } 
+    90%{
+        transform: translateY(400px);
+        opacity: 0.9;
+    } 
+    
+    
+    /* 30%{
+        transform: translateY(340px);
+        opacity: 0.7;
+    }
+    50%{
+        transform: translateY(330px);
+        opacity: 0.8;
+    } */
+    100%{
+        transform: translateY(380px);
+        opacity: 1;
+    }
+}
+.slider{
+    /* 绝对定位 */
+    position: absolute;
+    /* width: 300%;
+    height: 100%; */
+    display: inline-flex;
+    overflow: hidden;
+    width:520px;
+    height:600px;
+}
+
+.container:hover{
+    
+    transform: scale(1.3);
+}
+svg{
+    width: 520px;
+    height: 600px;
+    position: absolute;
+    /* 设置堆叠顺序 */
+    z-index: 3;
+}
+/* 左右按钮的统一样式 */
+.btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #949494;
+    color: #949494;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    /* 垂直居中 */
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    transform: translateY(-50%);
+    cursor: pointer;
+    /* 设置过渡效果 */
+    transition: 0.5s;
+    animation-name: up;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-in;
+}
+.btn:hover{
+    background-color: #fefefe;
+}
+.btn.btn-left{
+    left: 39px;
+
+}
+.btn.btn-right{
+    left: 680px;
+}
+circle{
+   
+    fill: none;
+    stroke: #000000;
+    opacity: 0.8;
+ 
+    stroke-width: 0;
+
+    transition: 0.3s;
+
+    transition-timing-function: linear;
+}
+.svg1 .circle1,
+.svg2 .circle1{
+    transition-delay: 0.05s;
+}
+.svg1 .circle2,
+.svg2 .circle2{
+    transition-delay: 0.1s;
+}
+.svg1 .circle3,
+.svg2 .circle3{
+    transition-delay: 0.15s;
+}
+.svg1 .circle4,
+.svg2 .circle4{
+    transition-delay: 0.2s;
+}
+.svg1 .circle5,
+.svg2 .circle5{
+    transition-delay: 0.25s;
+}
+.svg1 .circle6,
+.svg2 .circle6{
+    transition-delay: 0.3s;
+}
+.svg1 .circle7,
+.svg2 .circle7{
+    transition-delay: 0.35s;
+}
+.svg1 .circle8,
+.svg2 .circle8{
+    transition-delay: 0.4s;
+}
+.svg1 .circle9,
+.svg2 .circle9{
+    transition-delay: 0.45s;
+}
+/* 焦点图的统一样式 */
+.slide{
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    height: 100%;
+    z-index: 1;
+    transition: 1.4s;
+}
+
+
+/* 分别设置焦点图 */
+.slide1{
+    background-image: url('img/9.png');
+    width:500px;
+    height:650px;
+}
+
+.slide1text{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.container:hover .slide1text{
+    z-index: 5;
+    visibility: visible;
+    opacity: 1;
+
+    color:white;
+
+    font-size: 30px;
+    position: absolute;
+   left:8%;
+   top:80%;
+}
+
+
+.slide2{
+    background-image: url('img/6.jpg');
+    width:500px;
+    height:650px;
+}
+.slide3{
+    background-image: url('img/10.jpeg');
+    width:500px;
+    height:650px;
+}
+.slide4{
+    background-image: url('img/7.jpg');
+    width:500px;
+    height:650px;
+
+}
+/* 切换时图片放大 */
+.scale{
+    transform: scale(1.2);
+}
+/* 设置当前图的堆叠顺序 */
+.active{
+    z-index: 2;
+}
+/* 设置波浪圆圈的厚度 */
+.streak{
+    stroke-width: 82px;
+}
+
+ 
+
+ /* .navigations {
+    z-index: 2;
+    position: absolute;
+    top:102%;
+
+  }
+ .dots ul {
+    z-index: 2;
+    height: 20px;
+    width: 20px;
+    
+    text-align: center;
+    cursor: pointer;
+
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+  } */
+  /* .navigations .dots li {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+  } */
+   /* .navigations .dots li + li {
+    margin-left: 10px;
+  }
+ .navigations .dots li:hover {
+    filter: blur(2px);
+  }
+ .navigations .dots li.active {
+    width: 15px;
+    height: 15px;
+  }
+ .navigations .dots li.active:hover {
+    filter: blur(0px);
+  } */
+
+
+/*menu bar*/
+nav {
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    transform: translate3d(35px, -35px, 0);
+    /* transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9); */
+  }
+  nav.open {
+    transform: translate3d(0, 0, 0);
+  }
+  nav.top-right {
+    top: -140px;
+     right: -140px; 
+  }
+  
+  .disc {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font: 15px Alegreya Sans, sans-serif;
+   
+    line-height: 40px;
+    padding-top: 10px;
+    border-radius: 300px;
+    transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
+    pointer-events: none;
+    opacity: 0;
+    cursor: pointer;
+    transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s;
+  }
+  .disc div {
+    transform: rotate(180deg);
+  }
+  .open .disc {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  
+  .l1 {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: tomato;
+   
+    transition-delay: 0s;
+  }
+  .open .l1 {
+    transition-delay: 0s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+    opacity: 1;
+  }
+  .open .l1:hover {
+    background: shade(tomato, 90%);
+    color: tomato;
+    transition-delay: 0s;
+  }
+  .open .l1:active {
+    background: shade(tomato, 50%);
+    color: tomato;
+  }
+  .open .l1.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  }
+  
+  .l2 {
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    background: #ff7a39;
+    transition-delay: 0.1s;
+  }
+  .open .l2 {
+    transition-delay: 0.1s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 180, 360, 80deg);
+    opacity: 1;
+  }
+  
+  .l2 p{
+    position: absolute;
+    left:40%;
+    top: 350px;
+    font-size: 20px;
+   
+  }
+  .open .l2:hover {
+    background: shade(#ff7a39, 90%);
+    color: #ff7a39;
+    transition-delay: 0s;
+  }
+  .open .l2:active {
+    background: shade(#ff7a39, 50%);
+    color: #ff7a39;
+  }
+  .open .l2.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  }
+  
+  .l3 {
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    background: #ff912b;
+    transition-delay: 0.2s;
+  }
+  .open .l3 {
+    transition-delay: 0.2s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 180, 360, 80deg);
+    opacity: 1;
+  }
+  
+  .l3 p{
+    position: absolute;
+    left:32%;
+    top:245px;
+    font-size: 20px;
+   
+  }
+  .open .l3:hover {
+    background: shade(#ff912b, 90%);
+    color: #ff912b;
+    transition-delay: 0s;
+  }
+  .open .l3:active {
+    background: shade(#ff912b, 50%);
+    color: #ff912b;
+  }
+  .open .l3.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0,0, 1, 10deg);
+  }
+  
+  .l4 {
+    top: 150px;
+    left: 150px;
+    right: 150px;
+    bottom: 150px;
+    background: #ffa91c;
+    transition-delay: 0.3s;
+   
+  }
+  .open .l4 {
+    transition-delay: 0.3s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 180, 360, 70deg);
+    opacity: 1;
+    padding-top: 0px;
+  }
+  
+  .l4 p{
+    position: absolute;
+    left:17%;
+    top:140px;
+    right:35%;
+    font-size: 20px;
+    transform: scale3d(1, 1, 1) rotate3d(0, 180, 360, 20deg);
+  }
+  .open .l4:hover {
+    background: shade(#ffa91c, 90%);
+    color: #413f3c;
+    transition-delay: 0s;
+  }
+  .open .l4:active {
+    background: shade(#ffa91c, 50%);
+    color: #0c0c0c;
+  }
+  .open .l4.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  }
+  
+  .l5 {
+    top: 200px;
+    left: 200px;
+    right: 200px;
+    bottom: 200px;
+    background: #ffc00e;
+    transition-delay: 0.4s;
+  }
+  .open .l5 {
+    transition-delay: 0.4s;
+    transform: scale3d(1, 1, 1) rotate3d(0, 180, 360, 80deg);
+    opacity: 1;
+  }
+  .open .l5:hover {
+    background: shade(#ffc00e, 90%);
+    color: #ffc00e;
+    transition-delay: 0s;
+  }
+  .open .l5:active {
+    background: shade(#e3e377, 50%);
+    color: #b4b45b;
+  }
+  .open .l5.toggle {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 180, 360, 80deg);
+  }
+  
+  .toggle {
+    line-height: 100px;
+    padding: 0px;
+    width: 100px;
+    background: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    /* opacity: 0.6; */
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 2px 2px grey;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition-delay: 0s;
+  }
+  .open .toggle {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  .toggle:hover {
+    background-color: (rgb(207, 207, 97), 90%);
+    text-decoration: underline;
+    transform: scale(1.1);
+    color:rgb(0, 0, 0);
+  }
+  

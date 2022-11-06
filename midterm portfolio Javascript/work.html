@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <title>Artwork</title>
+   
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="work.css">
+    <link rel="icon" type="image/png" href="img/meremove.ico" sizes="32x32">
+</head>
+
+<body>
+
+
+    <nav class="top-right open">
+       
+        <a class="disc l2" href="about.html">
+         <p>About</p>  
+        </a>
+        <a class="disc l3" href="handmade.html">
+         <p >handmade</p> 
+         </a>
+         <a class="disc l4" href="homepage.html">
+          <p>homepage</p>  
+         </a>
+         <button id="btn"><a class="disc l5 toggle" >
+            Menu
+        </a>
+      </button>
+         </nav>
+
+
+
+    <div class="container">
+
+    <div class="slider">
+        <!-- <div class="slider">
+            <div class="btn btn-left">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="btn btn-right">
+                <i class="fa fa-angle-right"></i>
+            </div> -->
+            <svg class="svg1">
+            
+                <circle class="circle1" cx="34px" cy="50%" r="20"/>
+                <circle class="circle2" cx="34px" cy="50%" r="100"/>
+                <circle class="circle3" cx="34px" cy="50%" r="180"/>
+                <circle class="circle4" cx="34px" cy="50%" r="260"/>
+                <circle class="circle5" cx="34px" cy="50%" r="340"/>
+                <circle class="circle6" cx="34px" cy="50%" r="420"/>
+                <circle class="circle7" cx="34px" cy="50%" r="500"/>
+                <circle class="circle8" cx="34px" cy="50%" r="580"/>
+                <circle class="circle9" cx="34px" cy="50%" r="660"/>
+            </svg>
+            <svg class="svg2">
+            
+                <circle class="circle1" cx="648px" cy="50%" r="20"/>
+                <circle class="circle2" cx="648px" cy="50%" r="100"/>
+                <circle class="circle3" cx="648px" cy="50%" r="180"/>
+                <circle class="circle4" cx="648px" cy="50%" r="260"/>
+                <circle class="circle5" cx="648px" cy="50%" r="340"/>
+                <circle class="circle6" cx="648px" cy="50%" r="420"/>
+                <circle class="circle7" cx="648px" cy="50%" r="500"/>
+                <circle class="circle8" cx="648px" cy="50%" r="580"/>
+                <circle class="circle9" cx="648px" cy="50%" r="660"/>
+            </svg>
+            <div class="slide slide1 active">
+               <div> <p class="slide1text">Sketch</p>  </div>
+            </div>
+
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4"></div>
+          
+          
+           
+              </div>
+              <!-- <div class="navigations">
+                <ul class="dots"></ul>
+        </div> -->
+        
+        
+    </div>
+ 
+    <div class="button">
+        <div class="btn btn-left">
+            <i class="fa fa-angle-left"></i>
+        </div>
+        <div class="btn btn-right">
+            <i class="fa fa-angle-right"></i>
+        </div>
+    </div>
+
+    
+
+    
+</body>
+
+<script>
+    toggle = document.querySelectorAll(".toggle")[0];
+    console.log(toggle);
+    nav = document.querySelectorAll("nav")[0];
+    console.log(nav);
+    toggle_open_text = 'Menu';
+    toggle_close_text = 'Close';
+    
+    toggle.addEventListener('click', function() {
+        nav.classList.toggle('open');
+        
+      if (nav.classList.contains('open')) {
+        toggle.innerHTML = toggle_close_text;
+        const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function onClick(event) {
+
+  document.body.style.background = 'black';}
+// document.body.style.backgroundImage="linear-gradient(to right, #bdc3c7, #2c3e50)"
+// document.body.style.background="linear-gradient(to right, #4f5c69,#ededed)"}
+  )
+       
+      } else {
+        toggle.innerHTML = toggle_open_text;
+        const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function onClick(event) {
+
+  document.body.style.background = 'url(img/99background.png)';
+  document.body.style.backgroundSize= 'cover'}
+  )
+       
+      }
+    }, false);
+
+
+    
+    setTimeout(function(){
+        nav.classList.toggle('open');	
+    }, 800);
+</script>
+
+</html>
+
+<script src="work.js"></script>

@@ -1,0 +1,479 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Handmade</title>
+        <link rel="icon" type="image/x-icon" href="img/meremove.ico">
+    </head>
+
+    <style>
+*{
+    margin:0;
+    padding:0;
+}
+
+.work{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     margin:210px;
+     color:white;
+     text-align: center;
+     
+    }
+    body{
+        background-color: black;
+    }
+    .work1{
+        margin:90px;
+    }
+    .work2{
+        margin:90px;
+    }
+    .fineart{
+    background-color: black;
+    color:white;
+    border:none;
+    font-size:20px;
+    top: 72px;
+    left: 1000px;
+    height: auto;
+    position: absolute;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+
+  button:hover{
+    /* text-shadow: 0 0 3px #FF0000; */
+  /* background-color: #f8f8f8; */
+  /* text-shadow: 2px 2px#FF3EA5; */
+  text-shadow: 4px 4px#f0e9ed94;
+  }
+
+  
+  .about{
+    background-color: black;
+    color:white;
+    border:none;
+    font-size:20px;
+    top: 72px;
+    left: 1125px;
+    height: auto;
+    position: absolute;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+   button:hover{
+  
+  text-shadow: 4px 4px#f0e9ed94;
+  }
+
+  .contactm{
+    background-color: black;
+    color:white;
+    border:none;
+    font-size:20px;
+    top: 72px;
+    left: 1225px;
+    height: auto;
+    position: absolute;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .contact button:hover{
+  
+  text-shadow: 4px 4px#f0e9ed94;
+  }
+
+  .intro1{
+    background-color: black;
+    color:white;
+    border:none;
+    font-size:20px;
+    top: 72px;
+    /* left:700px; */
+    left: 850px;
+    height: auto;
+    position: absolute;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    /* font-family: "Permanent Marker", cursive; */
+	font-family: Inter;
+    /* opacity: 0.6; */
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+
+  #btn{
+        /* position: relative; */
+        position: absolute;
+         left:1350px;
+        top:70px; 
+        width:100px;
+        height:40px;
+        background-color: (255,255,255,0.1);
+        border-radius: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* display:inline-block; */
+        /* color:(255,255,255,0.5); */
+        color:rgb(7, 7, 7);
+        text-decoration: none;
+        letter-spacing: 2px;
+        border-top: 0.5px solid (255,255,255,0.35);
+        border-left: 0.5px solid (255,255,255,0.35);
+        padding-left:40px;
+        transition: 0.5s; 
+        overflow: hidden;
+
+    }
+
+    #btn:hover{
+        padding-left: 0;
+        padding-right:40px;
+        color:rgb(255, 255, 255);
+       
+
+    }
+
+    #btn span{
+        position: absolute;
+        left:5px;
+        width: 35px;
+        height:35px;
+        background-color: rgb(248, 245, 245);
+        border-radius:50%;
+        transition: 0.5 ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#1a191d;
+        font-size: 1.5em;
+    }
+
+    #btn:hover span{
+        left:calc(100%-55px);
+    }
+
+    #btn:after{
+    content:'';
+    
+    position: absolute;
+    width:80px;
+    height:100%;
+    z-index:1;
+    background-color: grey; 
+    transform: translateX(-150px) skew(30deg);
+    /* transition: 0.75s ease-in-out; */
+    }
+
+    #btn:hover::after{
+        transform: translateX(170px) skewX(30deg);
+    }
+    .homepage{
+    background-color: black;
+    color:white;
+    
+    border:none;
+    font-size:20px;
+    top: 72px;
+    left:700px;
+    /* left: 850px; */
+    height: auto;
+    position: absolute;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+
+
+
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  { 
+  .homepage{
+background-color: black;
+color:white;
+
+border:none;
+font-size:22px;
+top: 55px;
+/* left: 20px; */
+left: 165px;
+height: auto;
+position: absolute;
+align-self: auto;
+font-style: Regular;
+text-align: left;
+font-family: Inter;
+font-weight: 400;
+line-height: normal;
+font-stretch: normal;
+margin-right: 0;
+margin-bottom: 0;
+text-decoration: none;
+text-shadow: 2px 2px#f0e9ed94;
+}
+
+.handmade{
+background-color: black;
+color:white;
+border:none;
+font-size:22px;
+top: 55px;
+/* left: 160px; */
+left: 315px;
+height: auto;
+position: absolute;
+align-self: auto;
+font-style: Regular;
+text-align: left;
+font-family: Inter;
+font-weight: 400;
+line-height: normal;
+font-stretch: normal;
+margin-right: 0;
+margin-bottom: 0;
+text-decoration: none;
+text-shadow: 2px 2px#f0e9ed94;
+}
+button:hover{
+
+text-shadow: 4px 4px#f0e9ed94;
+}
+
+.about{
+background-color: black;
+color:white;
+border:none;
+font-size:22px;
+top: 55px;
+/* left: 300px; */
+left: 405px;
+height: auto;
+position: absolute;
+align-self: auto;
+font-style: Regular;
+text-align: left;
+font-family: Inter;
+font-weight: 400;
+line-height: normal;
+font-stretch: normal;
+margin-right: 0;
+margin-bottom: 0;
+text-decoration: none;
+text-shadow: 2px 2px#f0e9ed94;
+}
+button:hover{
+
+text-shadow: 4px 4px#f0e9ed94;
+}
+
+.contactm{
+background-color: black;
+color:white;
+border:none;
+font-size:23px;
+top: 55px;
+/* left: 390px; */
+left:510px;
+height: auto;
+position: absolute;
+align-self: auto;
+font-style: Regular;
+text-align: left;
+font-family: Inter;
+font-weight: 400;
+line-height: normal;
+font-stretch: normal;
+margin-right: 0;
+margin-bottom: 0;
+text-decoration: none;
+text-shadow: 2px 2px#f0e9ed94;
+}
+.contactm button:hover{
+
+text-shadow: 4px 4px#f0e9ed94;
+}
+.intro1{
+background-color: black;
+color:white;
+border:none;
+font-size:23px;
+top: 55px;
+/* left:510px; */
+left:20px;
+height: auto;
+position: absolute;
+align-self: auto;
+font-style: Regular;
+text-align: left;
+/* font-family: "Permanent Marker", cursive; */
+font-family: Inter;
+/* opacity: 0.6; */
+font-weight: 400;
+line-height: normal;
+font-stretch: normal;
+margin-right: 0;
+margin-bottom: 0;
+text-decoration: none;
+text-shadow: 2px 2px#f0e9ed94;
+}
+
+.fineart{
+        background-color: black;
+        color:white;
+        border:none;
+        font-size:25px;
+        top: 55px;
+        left: 320px;
+        height: auto;
+        position: absolute;
+        align-self: auto;
+        font-style: Regular;
+        text-align: left;
+        font-family: Inter;
+        font-weight: 400;
+        line-height: normal;
+        font-stretch: normal;
+        margin-right: 0;
+        margin-bottom: 0;
+        text-decoration: none;
+        text-shadow: 2px 2px#f0e9ed94;
+      }
+
+      .work{
+display: flex;
+align-items: center;
+flex-direction: column;
+margin:210px;
+color:white;
+text-align: center;
+
+
+
+
+}
+
+.work1{
+  margin:90px;
+ position: absolute;
+ top:220px;
+ left:20px;
+  
+}
+
+.work1 p{
+    margin:20px;
+  padding:20px;
+  text-align: center;
+  font-size: 20px;
+}
+.work2{
+  margin:90px;
+  position: absolute;
+ top:160%;
+ left:20px;
+  
+}
+
+.work2 p{
+    margin:20px;
+  padding:20px;
+  text-align: center;
+  font-size: 20px;
+}
+  }
+
+    </style>
+    <body>
+        <div class="container">
+            <a  href="homepage.html" target="_blank"><button class="homepage" >Home Page</button></a>
+            <a  href="fineart.html" target="_blank"><button class="fineart" id="fineart">Fine Art</button></a>
+            <a  href="intro.html" target="_blank"><button class="intro1" >Introduction</button></a>
+            <a  href="about.html" target="_blank"><button class="about" >About</button></a>
+            <a  href="contact.html" target="_blank"><button class="contactm" >Contact</button></a>
+        </div>
+        
+        <div class="work">
+            <a href="#" id="btn"><span><ion-icon name="sunny-outline"></ion-icon></span></a>
+        <div class="work1">
+            <img src="img/h1.jpg" alt="Girl in a jacket" width="500" height="600">
+            <h3>Frida Kahlo</h3>
+            <br>
+            <p style="text-align:left"> The clay Sculpture "Frida kahlo" intended to pay tribute to Frida's spirit and her refusal to yield to fate. As a girl, I have the same desire to be an excellent female artist as Frida did, so I did not hesitate to choose her when making this work. I created a 3 D image through clay, which can be more stereoscopic and intuitive to people. Laying her favorite flower on the top of the clay is my way of showing her blooming life, presenting a symbol of vitality. 
+            </p>
+  
+        </div>
+        <div class="work2">
+            <img src="img/h2.jpg" alt="Girl in a jacket" width="500" height="600">
+            <h3>Art and Life</h3>
+            <br>
+            <p style="text-align:left">
+                The work made with wool and pasted buttons, and the girl in the artwork is me. I hope to use more artistic and creative techniques to express my uniqueness. In Asian culture, wool means not only warmth but also present bonds and connections. I want to convey to
+                my audience through the use of wool how my feelings toward art are irreplaceable.
+                </p>
+                <br>
+            <p style="text-align:left">Material:Woolen thread, Buttons</p>
+        </div>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+    <script>
+    
+   
+        const btn = document.getElementById('btn');
+        
+        btn.addEventListener('click', function onClick(event) {
+        
+          document.body.style.backgroundColor = 'white';}
+          )
+        
+          btn.addEventListener('dblclick', function ondblclick(event) {
+        
+          document.body.style.backgroundColor = 'black';}
+          )
+        </script>
+    </html>

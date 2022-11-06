@@ -1,0 +1,366 @@
+*{
+    margin:0;
+    padding:0;
+}
+ body{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* background: radial-gradient(black,rgb(111, 110, 110)); */
+    background-color: black;
+    color:white;
+
+  
+ }
+
+
+ .in{
+    font-size:25px;
+    color:white;
+    position: absolute;
+   top: 10%;
+    left:10%;
+   
+    text-shadow: 2px 2px rgb(133, 131, 131);
+ }
+
+ .intro{
+    font-size:20px;
+    color:white;
+    position: absolute;
+   top: 30%;
+    left:15%;
+    right:10%;
+ }
+
+ .important{
+    font-size:20px;
+    color:white;
+    position: absolute;
+     top: 90%;
+    left:15%;
+    right:10%;
+   
+ }
+
+ .homepage{
+    background-color: black;
+    color:white;
+    border:none;
+    font-size:20px;
+    top: 62px;
+    left: 750px;
+    height: auto;
+    position: absolute;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+
+ .fineart{
+    background-color: black;
+    color:white;
+    border:none;
+    font-size:20px;
+    top: 62px;
+    left: 880px;
+    height: auto;
+    position: absolute;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+
+  button:hover{
+    /* text-shadow: 0 0 3px #FF0000; */
+  /* background-color: #f8f8f8; */
+  /* text-shadow: 2px 2px#FF3EA5; */
+  text-shadow: 4px 4px#f0e9ed94;
+  }
+
+  .handmade{
+    background-color: black;
+    color:white;
+    border:none;
+    font-size:20px;
+    top: 62px;
+    left: 990px;
+    height: auto;
+    position: absolute;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+ button:hover{
+   
+  text-shadow: 4px 4px#f0e9ed94;
+  }
+
+  .about{
+    background-color: black;
+    color:white;
+    border:none;
+    font-size:20px;
+    top: 62px;
+    left: 1125px;
+    height: auto;
+    position: absolute;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+   button:hover{
+  
+  text-shadow: 4px 4px#f0e9ed94;
+  }
+
+  .contactm{
+    background-color: black;
+    color:white;
+    border:none;
+    font-size:20px;
+    top: 62px;
+    left: 1225px;
+    height: auto;
+    position: absolute;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .contact button:hover{
+  
+  text-shadow: 4px 4px#f0e9ed94;
+  }
+
+
+
+
+
+
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  { 
+  body{
+      height: 844;
+      display:flex;
+      align-items: flex-end;
+      justify-content: center;
+      /* background: radial-gradient(black,rgb(111, 110, 110)); */
+      background-color: black;
+      color:white;
+    
+   }
+  
+   .homepage{
+  background-color: black;
+  color:white;
+  
+  border:none;
+  font-size:17px;
+  top: 40px;
+  left: 30px;
+  height: auto;
+  position: absolute;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  }
+  
+   .fineart{
+  background-color: black;
+  color:white;
+  
+  border:none;
+  font-size:17px;
+  top: 40px;
+  left: 130px;
+  height: auto;
+  position: absolute;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  }
+  
+  button:hover{
+  /* text-shadow: 0 0 3px #FF0000; */
+  /* background-color: #f8f8f8; */
+  /* text-shadow: 2px 2px#FF3EA5; */
+  text-shadow: 4px 4px#f0e9ed94;
+  }
+  
+  .handmade{
+  background-color: black;
+  color:white;
+  border:none;
+  font-size:17px;
+  top: 40px;
+  left:205px;
+  height: auto;
+  position: absolute;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  }
+  button:hover{
+  
+  text-shadow: 4px 4px#f0e9ed94;
+  }
+
+  .about{
+    background-color: black;
+    color:white;
+    border:none;
+    font-size:17px;
+    top: 40px;
+    left: 310px;
+    height: auto;
+    position: absolute;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  
+  
+  .contactm{
+  background-color: black;
+  color:white;
+  border:none;
+  font-size:17px;
+  top: 40px;
+  left:370px;
+  height: auto;
+  position: absolute;
+  align-self: auto;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  }
+  .contactm button:hover{
+  
+  text-shadow: 4px 4px#f0e9ed94;
+  }
+  
+  .intro1{
+      background-color: black;
+      color:white;
+      border:none;
+      font-size:20px;
+      top: 72px;
+      left:250px;
+      height: auto;
+      position: absolute;
+      align-self: auto;
+      font-style: Regular;
+      text-align: left;
+      /* font-family: "Permanent Marker", cursive; */
+      font-family: Inter;
+      /* opacity: 0.6; */
+      font-weight: 400;
+      line-height: normal;
+      font-stretch: normal;
+      margin-right: 0;
+      margin-bottom: 0;
+      text-decoration: none;
+    }
+  
+  .in{
+    position: absolute;
+    left:10%;
+    top:20%;
+    font-size: 18px;;
+    color:white;
+    text-shadow: 2px 2px gray;
+    
+    }
+    
+    .intro{
+    position: absolute;
+    left:10%;
+    top:30%;
+    right:5%;
+  
+    font-size: 15px;;
+    color:white;
+    }
+
+    .important{
+        position: absolute;
+        left:10%;
+        top:120%;
+        right:5%;
+      
+        font-size: 15px;;
+        color:white;
+        }
+}

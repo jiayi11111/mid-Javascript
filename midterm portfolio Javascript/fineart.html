@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Art</title>
+    <link rel="icon" type="image/x-icon" href="img/meremove.ico">
+    <link rel="stylesheet" href="fineart.css">
+</head>
+
+<style>
+
+   
+</style>
+
+<body>
+
+
+
+    <nav class="top-right open">
+       
+        <a class="disc l2" href="about.html">
+         <p>About</p>  
+        </a>
+        <a class="disc l3" href="handmade.html">
+         <p >handmade</p> 
+         </a>
+         <a class="disc l4" href="homepage.html">
+          <p>homepage</p>  
+         </a>
+         <button id="btn"><a class="disc l5 toggle" >
+            Menu
+        </a>
+      </button>
+         </nav>
+    
+  
+    <div class="work">
+        <!-- <label for="toggle">
+            <input type="checkbox" id="toggle"> -->
+        
+        <!-- <button id="btn">Button<span><ion-icon name="sunny-outline"></ion-icon></span></button> -->
+        <!-- <a href="#" id="btn"><span><ion-icon name="sunny-outline"></ion-icon></span></a> -->
+    <!-- </label> -->
+    <div>
+        <img class="background1" src="img/99background.PNG" alt="background">
+    <div class="work1">
+        <img src="img/9.png" alt="Girl in a jacket" width="500" height="600">
+      
+        <h3>Sculpture</h3>
+        <p>Sketch</p>
+
+    </div>
+</div>
+    <!-- <div class="background1">
+        <img src="img/99background.PNG" alt="background"> -->
+    <!-- <div class="work11">
+        <img src="img/99.png" alt="Girl in a jacket" width="600" height="800"> -->
+  
+  
+</div>
+    <div class="work2">
+        <img src="img/6.jpg" alt="Girl in a jacket" width="500" height="600">
+        <h3>Body Sketch</h3>
+    </div>
+    <div class="work3">
+        <img src="img/10.jpeg" alt="Girl in a jacket" width="500" height="600">
+        <h3>Time's Hourglass</h3>
+        <br>
+        <p >The work is based on printmaking and character sketches, which combine sketch self-portraits,<br> white latex, crayons, water-based paint, and newspapers. <br>I was sparked to create it when my mother was showing me pictures of different periods <br>in my life. I wanted to present all my life turning points in one artwork, <br>which allows me to feel my life in the painting.</p>
+    </div>
+    <div class="work4">
+        <img src="img/3.jpg" alt="Girl in a jacket" width="500" height="600">
+        <h3>Sketch</h3>
+        <p>Man</p>
+    </div>
+    <div class="work5">
+        <img src="img/7.jpg" alt="Girl in a jacket" width="500" height="600">
+        <h3>Oil painting</h3>
+    </div>
+
+    <div class="work6">
+        <img src="img/9.jpg" alt="Girl in a jacket" width="500" height="600">
+        <h3>Oil painting</h3>
+    </div>
+</div>
+
+<!-- <p  class="text" style="color:white">Write down shortcomings of the appearance and<br> body figure of the character in the artwork</p> -->
+<!-- <div class="post"> -->
+    
+<!-- <form > -->
+
+    <!-- <p><label  id="text1" for="area"></label></p> -->
+    <!-- <textarea id="area" rows="4" cols="50" value=""></textarea> -->
+ 
+    <!-- <textarea id="area"  value=""></textarea>
+    <br> -->
+    <!-- <p><input id="text" type="text" value="Hello hello hello hello" name="text"></p> -->
+    <!-- <input id="text2" type="text" value="Hello hello hello hello" name="text"> -->
+    <!-- <button class="button" type="submit"  onmouseenter="myFunction()" value="Submit">submit</button> -->
+  <!-- </form>
+</div> -->
+
+<!-- <div class="post2">
+    <form >
+
+        <p><label  id="text2" for="area"></label></p>
+       <textarea id="area" rows="4" cols="50" value=""></textarea> -->
+     
+        <!-- <textarea id="area1"  value=""></textarea>
+        <br> -->
+        <!-- <p><input id="text" type="text" value="Hello hello hello hello" name="text"></p> -->
+        <!-- <input id="text2" type="text" value="Hello hello hello hello" name="text"> -->
+        <!-- <button class="button2" type="submit"  onmouseenter="myFunction()" value="Submit">submit</button> -->
+      <!-- </form> -->
+<!-- </div> --> 
+
+<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+</body>
+
+<script>
+    
+   
+// const btn = document.getElementById('btn');
+
+// btn.addEventListener('click', function onClick(event) {
+
+//   document.body.style.backgroundColor = 'white';}
+//   )
+
+//   btn.addEventListener('dblclick', function ondblclick(event) {
+
+//   document.body.style.backgroundColor = 'black';}
+//   )
+
+toggle = document.querySelectorAll(".toggle")[0];
+    console.log(toggle);
+    nav = document.querySelectorAll("nav")[0];
+    console.log(nav);
+    toggle_open_text = 'Menu';
+    toggle_close_text = 'Close';
+    
+    toggle.addEventListener('click', function() {
+        nav.classList.toggle('open');
+        
+      if (nav.classList.contains('open')) {
+        toggle.innerHTML = toggle_close_text;
+        const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function onClick(event) {
+
+  // document.body.style.backgroundColor = 'white';
+// document.body.style.backgroundImage="linear-gradient(to right, #bdc3c7, #2c3e50)"
+document.body.style.backgroundImage="linear-gradient(to right, #4f5c69,#ededed)"}
+  )
+       
+      } else {
+        toggle.innerHTML = toggle_open_text;
+        const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function onClick(event) {
+
+  document.body.style.background = 'black';}
+  )
+       
+      }
+    }, false);
+
+
+    
+    setTimeout(function(){
+        nav.classList.toggle('open');	
+    }, 800);
+
+//   function myFunction() {
+//             var x = document.getElementById('area');
+//             x.value = "hihihihihihihhihi";}
+
+// function myFunction() {
+//             var x = document.getElementById('area1');
+//             x.value = "hihihihihihihhihi";}
+</script>
+</html>
